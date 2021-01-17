@@ -10,11 +10,11 @@
 
 （1）正式文本情绪词典构建
 
-利用词典重组方法，在现有广泛使用词典的基础上提炼和构建了适用于金融领域正式文本研究的情绪词典。利用2003-2015年间所有中国上市公司年报文本（共计19970份），结合Engelberg et al.（2012）的语调判断方法对三份现有通用型中文情绪词典和Loughran & McDonald（2011）情绪词典的中文翻译版进行正负面词语提取，并运用带惩罚机制词频法生成正式用语情绪词典。
+利用词典重组方法，在现有广泛使用词典的基础上提炼和构建了适用于金融领域正式文本研究的情绪词典。利用2003-2015年间所有中国上市公司年报文本（共计19970份），结合Engelberg et al.（2012）的语调判断方法区分单个年报的正负面情绪。对三份现有通用型中文情绪词典和Loughran & McDonald（2011）情绪词典的中文翻译版进行词语整合，并加入年报语料的分词结果去重得到初始词典，然后运用带惩罚机制词频法提取情绪词生成正式用语情绪词典。
 
 （2）非正式文本情绪词典构建
 
-利用2011-2016年间雪球论坛用户发帖以及2010-2017年间东方财富网股吧发帖，以带有情绪识别符号（Emoji表情符）的股票论坛发帖为训练集，结合长短期记忆模型（Long Short-Term Memory, LSTM）的深度学习算法，并运用带惩罚机制词频法生成非正式用语情绪词典。
+利用2011-2016年间雪球论坛用户发帖以及2010-2017年间东方财富网股吧发帖（共计8130多万条发帖），以8789条带有情绪识别符号的股票论坛发帖为训练集，结合长短期记忆模型（Long Short-Term Memory, LSTM）的深度学习算法，并运用带惩罚机制词频法生成了非正式用语情绪词典。
 
 更多词典构建细节请参考论文。
 
@@ -22,9 +22,9 @@
 
 [1]   姚加权，冯绪，王赞钧，纪荣嵘，张维. 语调、情绪及其市场影响——基于金融领域中文情绪词典的研究. 管理科学学报，已接受待发表.
 
-[2]   Engelberg, J. E., A. V. Reed, and M. C. Ringgenberg, 2012, “How Are Shorts Informed? Short Sellers, News, and Information Processing”, Journal of Financial Economics, 105(2), 260-278.
+[2]   Engelberg, J. E., A. V. Reed, and M. C. Ringgenberg. How Are Shorts Informed? Short Sellers, News, and Information Processing [J]. Journal of Financial Economics. 2012. 105(2), 260-278. 
 
-[3]   Loughran, T., and B. McDonald, 2011, “When Is A Liability Not A Liability? Textual Analysis, Dictionaries, and 10‐Ks”, Journal of Finance, 66(1), 35-65.
+[3]   Loughran, T., and B. McDonald. When Is A Liability Not A Liability? Textual Analysis, Dictionaries, and 10‐Ks [J]. Journal of Finance. 2011. 66(1), 35-65.
 
 # 附录
 
